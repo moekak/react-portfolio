@@ -1,0 +1,120 @@
+
+
+
+.contact-container{
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+ 
+
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.message{
+    width: 300px;
+}
+.contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+.form-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+input{
+    border: 1px solid rgba(255, 255, 255, 0.309);
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color:rgba(255, 255, 255, 0.309) ;
+    outline: none;
+}
+
+textarea{
+    border: 1px solid rgba(255, 255, 255, 0.309);
+    background-color: transparent;
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    color:rgba(255, 255, 255, 0.309)  ;
+    outline: none;
+}
+
+.contact > p{
+    width: 100%;
+    padding: 2rem;
+}
+
+.contact-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+.contact-icon a{
+    color: gray;
+    text-decoration: none;
+}
+.email{
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.whatsapp{
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.email:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.whatsapp:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+@media screen and (max-width:1200px){
+    .contact-icon{
+      display: flex;
+      flex-direction: column;
+    }
+
+}
+@media screen and (max-width:900px){
+    .contact-icon{
+      display: flex;
+      flex-direction: column;
+    }
+
+}

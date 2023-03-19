@@ -1,0 +1,103 @@
+.about-container{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../../img/Colored\ Shapes\ \(2\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+ 
+
+}
+.about-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+
+.text-container{
+    position:relative;
+    width:500px;
+    height:250px;
+    background:#84319b;
+    padding:20px;
+    text-align:left;
+    color:#333333;
+    font-size:14px;
+    font-weight:bold;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+}
+.text-container:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(90, 230, 40, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:30px;
+    border-right-width:30px;
+    margin-top: -10px;
+    border-right-color:#84319b;
+    right:100%;
+    top:50%;
+}
+.detail-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image2{
+    width: 50%;
+}
+
+@media screen and (max-width:1000px){
+    .detail-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 3rem;
+       
+    }
+    .text-container:after,.text-container:before{
+        border: solid transparent;
+        content:'';
+        height:0;
+        width:0;
+        pointer-events:none;
+        position:absolute;
+        bottom:100%;
+        left:50%;
+    }
+
+    .text-container:before{
+        border-color: rgba(30, 144, 255, 0);
+        border-top-width:24px;
+        border-bottom-width:24px;
+        border-left-width:12px;
+        border-right-width:12px;
+        margin-left: -12px;
+
+        border-bottom-color:#b7410e;
+    }
+}

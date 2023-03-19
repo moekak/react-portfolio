@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;800&family=Poppins:wght@300;400;500;600&family=Tilt+Warp&family=Work+Sans:wght@400;900&display=swap');
+
+.app{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+   
+}
