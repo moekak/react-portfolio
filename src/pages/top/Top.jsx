@@ -8,7 +8,7 @@ import 'animate.css';
 
 const Top = () => {
   return (
-    <div className="top-container">
+    <div className="top-container" id='top'>
         <div className="top-box">
             <div className="intro">
                 <div className="underline"></div>

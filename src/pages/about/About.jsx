@@ -4,8 +4,8 @@ import IMG from '../../img/undraw_coding_re_iv62 (1).svg'
 
 const About = () => {
   return (
-    <div className="about-container">
-        <h1 data-aos='fade-up' style={{padding: '5rem 0rem'}}><span>02. </span>About</h1>
+    <div className="about-container" id='about'>
+        <h1 data-aos='fade-up' style={{padding: '3rem 0rem', width: '100%'}}><span>02. </span>About</h1>
          <div dclassName="about-box">
             
             <div className="desc">

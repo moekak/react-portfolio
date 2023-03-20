@@ -1,7 +1,7 @@
 .skill-container{
     margin: 0;
     box-sizing: border-box;
-    height: 80vh;
+    height: max-content;
     width: 100vw;
     background-color: black;
     margin: 0;
@@ -14,49 +14,224 @@
  
 
 }
-.skill-box{
+.skill-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+    
+}
+.skill-img img{
+    width: 80%;
+}
+.skill-first{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    
-}
-.skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
-    gap: 4rem;
-    color: white;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+    gap: 3rem;
+
 }
-.skill{
-    background-color: rgba(255, 255, 255, 0.107);
-    padding: 2rem;
+
+.skill-second{
+    width: 80%;
+}
+.skill-languages{
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+.html{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.css{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+.react{
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.ruby{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.js{
+    position: absolute;
+    bottom: 2%;
+    right: 30%;
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.skill-per::before{
+    color: black;
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    color: black;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f1f1f1;
+    top: -17px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg) ;
+    border-radius: 2px;
+}
+
+
+.skill-name{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 14px;
+    background-color: #282828;
+    border-radius: 3px;
+  
+}
+.skill-per{
+    height: 14px;
+    position: relative;
+    background-color: yellow;
+    border-radius: 3px;
+    animation: fillBars 2.5s 1 ;
+}
+.responsive{
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.139);
+}
+.responsive p{
+    font-size: 0.8rem;
+}
+
+.react-icon{
+    background-color: #84319b;
+    padding: 2rem;
+    border-radius: 50%;
 }
 
 
-.skill:hover{
-    transform: scale(1.1);
-    transition: 0.5s ease-out;
-    color: white;
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
-.skills p{
-    color: white;
 
-}
-
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     .skills{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
        
     }
 
+} */
+
+@media screen and (max-width:1100px){
+    .skill-container{
+        padding: 0rem 4rem;
+    }
+
 }
+
+@media screen and (max-width:900px){
+    .skill-container{
+        padding: 0rem 3rem;
+    }
+    .skill-container h3{
+        font-size: 1rem;
+    }
+    .skill-container p{
+        font-size: 0.8rem;
+    }
+
+}
+@media screen and (max-width:800px){
+  .responsive h3, p{
+    margin: 3px 0;
+  }
+  .skill-container p{
+    font-size: 0.6rem;
+}
+.react-icon{
+    background-color: #84319b;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+
+}
+@media screen and (max-width:650px){
+    .skill-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .responsive{
+        width: 80%;
+    }
+    .skill-boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-name{
+        font-size: 0.8rem;
+        
+    }
+  
+
+}
+
+@media screen and (max-width:400px){
+  .skill-languages{
+    width: 100%;
+  }
+  .skill-second{
+    width: 100% ;
+  }
+  
+  }

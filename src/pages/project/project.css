@@ -1,12 +1,12 @@
 .project-container{
     margin: 0;
     box-sizing: border-box;
-    min-height: 2050px;
+    height: 297vh;
     width: 100vw;
     background-color: black;
     margin: 0;
     color: white;
-    padding: 5rem 10rem;
+    padding: 0rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+ 
     
 }
 .project-box img{
@@ -121,14 +122,592 @@
     left: 60%;
     width: 60%;
 }
+.logo-span{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 3px;
+
+}
+.span-language{
+    text-align: center;
+    padding-left: 1rem;
+    display: none;
+}
 
 @media screen and (max-width:1150px){
    .project-container{
-    min-height: 2000px;
+    height: 300vh;
    }
 }
+
 @media screen and (max-width:1100px){
    .project-container{
-    min-height: 1900px;
+    height: 280vh;
    }
 }
+@media screen and (max-width:1070px){
+   .project-container{
+    height: 265vh;
+   }
+}
+
+@media screen and (max-width:1030px){
+   .project-container{
+    height: 250vh;
+   }
+}
+@media screen and (max-width:1000px){
+   .project-container{
+    height: 240vh;
+
+   }
+    .desc-projectFirst{
+        position: absolute;
+        top: 110%;
+        left: 40%;
+        width: 60%;
+    }
+    .desc-projectSecond{
+        position: absolute;
+        top: 255%;
+        right: 50%;
+        width: 60%;
+    }
+    .desc-projectThird{
+        position: absolute;
+        top: 400%;
+        left: 50%;
+        width: 60%;
+    }       
+}
+@media screen and (max-width:960px){
+    @media screen and (max-width:1030px){
+        .project-container{
+         height: 230vh;
+        }
+     }
+    .desc-projectFirst{
+        position: absolute;
+        top: 110%;
+        left: 40%;
+        width: 50%;
+    }
+    .desc-projectSecond{
+        position: absolute;
+        top: 255%;
+        right: 50%;
+        width: 60%;
+    }
+    .desc-projectThird{
+        position: absolute;
+        top: 400%;
+        left: 50%;
+        width: 60%;
+    }   
+    .span-language{
+        text-align: center;
+        padding-left: 1rem;
+        display: inline;
+    }
+    .language{
+        display: none;
+    }
+        
+}
+@media screen and (max-width:930px){
+    .project-container{
+     height: 220vh;
+    }
+ }
+@media screen and (max-width:900px){
+   .project-container{
+    height: 210vh;
+   }
+}
+@media screen and (max-width:870px){
+    .desc-projectFirst{
+        position: absolute;
+        top: 110%;
+        left: 40%;
+        width: 70%;
+    }
+    .desc-projectFirst p{
+        font-size: 0.8rem;
+    }
+    .desc-projectSecond p{
+        font-size: 0.8rem;
+    }
+    .desc-projectThird p{
+        font-size: 0.8rem;
+    }
+    .desc-projectSecond{
+        position: absolute;
+        top: 255%;
+        right: 50%;
+        width: 60%;
+    }
+    .desc-projectThird{
+        position: absolute;
+        top: 400%;
+        left: 50%;
+        width: 60%;
+    }   
+ }
+ @media screen and (max-width:900px){
+    .project-container{
+     height: 210vh;
+    }
+ }
+ @media screen and (max-width:870px){
+    .project-container{
+     height: 200vh;
+    }
+ }
+ @media screen and (max-width:830px){
+    .project-container{
+     height: 190vh;
+    }
+ }
+
+@media screen and (max-width:800px){
+   .project-container{
+    height: 180vh;
+   }
+}
+@media screen and (max-width:774px){
+    .project-container{
+        height: 175vh;
+       }
+    .desc-projectFirst{
+        width: 80%;
+
+    }
+    .desc-projectFirst h3, p{
+        margin: 0;
+    }
+    .desc-projectSecond h3, p{
+        margin: 0;
+    }
+    .desc-projectThird h3, p{
+        margin: 0;
+    }
+    .desc-projectSecond{
+        width: 80%;
+        top: 255%;
+        right: 45%;
+    }
+    .desc-projectThird{
+        width: 80%;
+    }  
+}
+@media screen and (max-width:740px){
+    .project-container{
+        height: 190vh;
+       }
+    
+    .img-first img{
+        width: 80%;
+    }
+    .img-second img{
+        width: 80%;
+    }
+    .img-third img{
+        width: 80%;
+    }
+}
+@media screen and (max-width:700px){
+    .project-container{
+        height: 174vh;
+       }
+    .desc-projectFirst{
+        width: 80%;
+
+    }
+    .desc-projectFirst h4{
+        margin: 3px 0;
+    }
+    .desc-projectSecond h4{
+        margin:3px 0;
+    }
+    .desc-projectThird h4{
+        margin: 3px 0;
+    }
+    .desc-projectSecond{
+        width: 80%;
+        top: 255%;
+        right: 45%;
+    }
+    .desc-projectThird{
+        width: 80%;
+    }  
+    .img-first img{
+        width: 80%;
+    }
+    .img-second img{
+        width: 80%;
+    }
+    .img-third img{
+        width: 80%;
+    }
+}
+@media screen and (max-width:674px){
+    .project-container{
+        height: 180vh;
+       }
+    .span-language{
+        text-align: center;
+        padding-left: 7px;
+        display: inline;
+    }
+   .logo-span{
+        font-size: 0.9rem;
+    }
+    .img-first img{
+        width: 90%;
+    }
+    .img-second img{
+        width: 90%;
+    }
+    .img-third img{
+        width: 90%;
+    }
+    /* .desc-projectSecond{
+        width: 100%;
+        
+    }
+    .desc-projectThird{
+        width: 100%;
+    }  
+    .desc-projectFirst{
+        width: 100%;
+    }   */
+    
+}
+@media screen and (max-width:640px){
+    .project-container{
+        height: 180vh;
+       }
+    .img-first img{
+        width: 100%;
+    }
+    .img-second img{
+        width: 100%;
+    }
+    .img-third img{
+        width: 100%;
+    }
+    .desc-projectSecond{
+
+        top: 270%;
+        right: 50%;
+        width: 95%;
+    
+    
+    }
+    .desc-projectThird{
+
+        top: 420%;
+        left: 50%;
+        width: 95%;
+ 
+    }   
+    .desc-projectFirst{
+        top: 132%;
+        left: 40%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .project-container{
+     height: 160vh;
+    }
+ }
+
+@media screen and (max-width:560px){
+    .project-container{
+        height: 140vh;
+       }
+    .desc-projectFirst h3{
+        font-size: 0.9rem;
+    }
+    .desc-projectSecond h3{
+        font-size: 0.9rem;
+    }
+    .desc-projectThird h3{
+        font-size: 0.9rem;
+    }
+    .desc-projectFirst h4{
+        font-size: 0.8rem;
+    }
+    .desc-projectSecond h4{
+        font-size: 0.8rem;
+    }
+    .desc-projectThird h4{
+        font-size: 0.8rem;
+    }
+    .desc-projectFirst p{
+        font-size: 0.7rem;
+    }
+    .desc-projectSecond p{
+        font-size: 0.7rem;
+    }
+    .desc-projectThird p{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:530px){
+    .project-container{
+        height: 130vh;
+       }
+    .desc-projectFirst h3{
+        font-size: 0.8rem;
+    }
+    .desc-projectSecond h3{
+        font-size: 0.8rem;
+    }
+    .desc-projectThird h3{
+        font-size: 0.8rem;
+    }
+    .desc-projectFirst h4{
+        font-size: 0.7rem;
+    }
+    .desc-projectSecond h4{
+        font-size: 0.7rem;
+    }
+    .desc-projectThird h4{
+        font-size: 0.7rem;
+    }
+    .desc-projectFirst p{
+        font-size: 0.6rem;
+    }
+    .desc-projectSecond p{
+        font-size: 0.6rem;
+    }
+    .desc-projectThird p{
+        font-size: 0.6rem;
+    }
+    .desc-projectSecond{
+
+        top: 260%;
+        right: 50%;
+        width: 100%;
+    
+    
+    }
+    .desc-projectThird{
+
+        top: 420%;
+        left: 50%;
+        width: 100%;
+ 
+    }   
+    .desc-projectFirst{
+        top: 123%;
+        left: 40%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:504px){
+    .project-container{
+        height: 145vh;
+       }
+    .desc-projectFirst h3{
+        font-size: 0.8rem;
+    }
+    .desc-projectSecond h3{
+        font-size: 0.8rem;
+    }
+    .desc-projectThird h3{
+        font-size: 0.8rem;
+    }
+    .desc-projectFirst h4{
+        font-size: 0.7rem;
+    }
+    .desc-projectSecond h4{
+        font-size: 0.7rem;
+    }
+    .desc-projectThird h4{
+        font-size: 0.7rem;
+    }
+    .desc-projectFirst p{
+        font-size: 0.6rem;
+    }
+    .desc-projectSecond p{
+        font-size: 0.6rem;
+    }
+    .desc-projectThird p{
+        font-size: 0.6rem;
+    }
+    .desc-projectSecond{
+
+        top: 260%;
+        right: 50%;
+        width: 90%;
+    
+    
+    }
+    .desc-projectThird{
+
+        top: 420%;
+        left: 50%;
+        width: 90%;
+ 
+    }   
+    .desc-projectFirst{
+        top: 123%;
+        left: 40%;
+        width: 100%;
+    }
+    .project-container{
+   
+        padding: 0rem 8rem;
+       
+    }
+}
+@media screen and (max-width:480px){
+    .project-container{
+     height: 135vh;
+    }
+ }
+@media screen and (max-width:460px){
+    .project-container{
+     height: 124vh;
+    }
+ }
+@media screen and (max-width:450px){
+    .project-container{
+        height: 135vh;
+       }
+    
+    .desc-projectSecond{
+
+        top: 260%;
+        right: 50%;
+        width: 90%;
+    
+    
+    }
+    .desc-projectThird{
+
+        top: 420%;
+        left: 50%;
+        width: 90%;
+ 
+    }   
+    .desc-projectFirst{
+        top: 123%;
+        left: 40%;
+        width: 100%;
+    }
+    .project-container{
+       
+     
+        padding: 0rem 7rem;
+
+    
+    }
+}
+@media screen and (max-width:450px){
+    .desc-projectFirst h3{
+        font-size: 0.7rem;
+    }
+    .desc-projectSecond h3{
+        font-size: 0.7rem;
+    }
+    .desc-projectThird h3{
+        font-size: 0.7rem;
+    }
+    .desc-projectFirst h4{
+        font-size: 0.6rem;
+    }
+    .desc-projectSecond h4{
+        font-size: 0.6rem;
+    }
+    .desc-projectThird h4{
+        font-size: 0.6rem;
+    }
+    .desc-projectFirst p{
+        font-size: 0.5rem;
+    }
+    .desc-projectSecond p{
+        font-size: 0.5rem;
+    }
+    .desc-projectThird p{
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width:430px){
+    .project-container{
+     height: 126vh;
+    }
+ }
+@media screen and (max-width:400px){
+    .desc-projectFirst h3{
+        font-size: 0.6rem;
+    }
+    .desc-projectSecond h3{
+        font-size: 0.6rem;
+    }
+    .desc-projectThird h3{
+        font-size: 0.6rem;
+    }
+    .desc-projectFirst h4{
+        font-size: 0.5rem;
+    }
+    .desc-projectSecond h4{
+        font-size: 0.5rem;
+    }
+    .desc-projectThird h4{
+        font-size: 0.5rem;
+    }
+    .desc-projectFirst p{
+        font-size: 0.4rem;
+    }
+    .desc-projectSecond p{
+        font-size: 0.4rem;
+    }
+    .desc-projectThird p{
+        font-size: 0.4rem;
+    }
+    .desc-projectSecond{
+
+        top: 260%;
+        right: 50%;
+        width: 90%;
+    
+    
+    }
+    .desc-projectThird{
+
+        top: 420%;
+        left: 50%;
+        width: 90%;
+ 
+    }   
+    .desc-projectFirst{
+        top: 123%;
+        left: 40%;
+        width: 100%;
+    }
+    .project-container{
+       
+     
+        padding: 0rem 6rem;
+
+    
+    }
+
+}
+@media screen and (max-width:370px){
+    .project-container{
+     height: 113vh;
+    }
+ }
+
+@media screen and (max-width:350px){
+    .project-container{
+     height: 104vh;
+    }
+ }
+
+

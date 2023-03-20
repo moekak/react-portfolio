@@ -9,7 +9,7 @@
     background-color: black;
     margin: 0;
     color: white;
-    padding: 5rem 10rem;
+    padding: 5rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,15 +31,13 @@
     justify-content: center;
     width: 80%;
 }
-.message{
-    width: 300px;
-}
+
 .contact-me{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 .form-container{
     display: flex;
@@ -79,8 +77,8 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
     gap: 5rem;
+    width: 100%;
 }
 .contact-icon a{
     color: gray;
@@ -90,11 +88,13 @@ textarea{
     background-color: rgba(255, 255, 255, 0.102);
     padding: 1rem 2rem;
     border-radius: 10px;
+    width: 100%;
 }
 .whatsapp{
     background-color: rgba(255, 255, 255, 0.102);
     padding: 1rem 2rem;
     border-radius: 10px;
+    width: 100%;
 }
 .email:hover{
     transform: scale(1.1);
@@ -104,17 +104,41 @@ textarea{
     transform: scale(1.1);
     transition: 0.5s;
 }
-@media screen and (max-width:1200px){
+/* @media screen and (max-width:1200px){
+    .contact-icon{
+      display: flex;
+      flex-direction: column;
+    }
+
+} */
+@media screen and (max-width:900px){
     .contact-icon{
       display: flex;
       flex-direction: column;
     }
 
 }
-@media screen and (max-width:900px){
-    .contact-icon{
-      display: flex;
-      flex-direction: column;
+@media screen and (max-width:750px){
+    .contact p{
+        font-size: 0.9rem;
+    }
+
+}
+@media screen and (max-width:750px){
+    .contact-container{
+        padding: 5rem 2rem;
+    }
+    .contact p{
+        font-size: 0.9rem;
+    }
+
+}
+@media screen and (max-width:500px){
+    .contact-container{
+        padding: 5rem 2rem;
+    }
+    .contact p{
+        font-size: 0.8rem;
     }
 
 }

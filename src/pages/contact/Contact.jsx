@@ -6,13 +6,13 @@ import IMG from '../../img/undraw_messaging_fun_re_vic9 (1).svg'
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id='contact'>
         <div className="contact-box">
             <div className="contact">
                 <h1 data-aos='fade-up' style={{paddingTop: '3rem'}}> <span>05. </span> Contact Me</h1>
                 <p data-aos='fade-up'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto saepe sint temporibus dicta repellendus fugit nesciunt atque ratione a, perferendis excepturi consectetur eaque tempora illo, error, id vitae autem repellat.</p>
                 <div className="contact-me">
-                    <img data-aos='fade-right' className='message' src={IMG} alt="" />
+                    
                     <div data-aos='fade-left' className="contact-icon">
                         <div className="email">
                             <a href="mailto:moeka.k0729@gmail.com" target="_blank" style={{color: '#84319b', fontSize: '3rem'}}> <MdOutlineEmail /></a>
